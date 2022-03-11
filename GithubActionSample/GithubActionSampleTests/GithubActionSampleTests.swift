@@ -10,20 +10,22 @@ import XCTest
 
 class GithubActionSampleTests: XCTestCase {
 
+    var validator: Validator!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        validator = Validator()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        validator = nil
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        XCTAssertEqual(validator.isValid(email: "https://www.naver.com"), false)
+        XCTAssertEqual(validator.isValid(email: "test@email.com"), true)
+        
+        XCTAssertEqual(validator.isValid(password: "asdf"), false)
+        XCTAssertEqual(validator.isValid(password: "1q2w3e"), true)
     }
 
     func testPerformanceExample() throws {
