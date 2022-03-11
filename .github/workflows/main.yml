@@ -27,11 +27,11 @@ jobs:
       uses: actions/cache@v2
       id: cache_dependencies
       with:
-        path: Pods
+        path: $PROJECT_ROOT_PATH/Pods
         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-pods-
-    
+          
     - name: CocoaPod Install
       run: pod install --project-directory="$PROJECT_ROOT_PATH"/
 
