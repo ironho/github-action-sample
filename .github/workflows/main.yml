@@ -36,7 +36,7 @@ jobs:
       run: pod install --project-directory="$PROJECT_ROOT_PATH"/
 
     - name: Setup build for testing
-      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=iPhone 8' build-for-testing | xcpretty --color
+      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' build-for-testing | xcpretty --color
             
     - name: Run tests - Any iOS Simulator Device
       run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' test-without-building | xcpretty --test --color

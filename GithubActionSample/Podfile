@@ -7,7 +7,6 @@ target 'GithubActionSample' do
   pod 'RealmSwift'
   pod 'Kingfisher'
   pod 'MXSegmentedPager'
-  pod 'VTAcknowledgementsViewController'
   
   target 'GithubActionSampleTests' do
     inherit! :search_paths

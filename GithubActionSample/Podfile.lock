@@ -13,14 +13,12 @@ PODS:
   - Realm/Headers (10.24.0)
   - RealmSwift (10.24.0):
     - Realm (= 10.24.0)
-  - VTAcknowledgementsViewController (2.0.1)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher
   - MXSegmentedPager
   - RealmSwift
-  - VTAcknowledgementsViewController
 
 SPEC REPOS:
   trunk:
@@ -32,7 +30,6 @@ SPEC REPOS:
     - MXSegmentedPager
     - Realm
     - RealmSwift
-    - VTAcknowledgementsViewController
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
@@ -43,8 +40,7 @@ SPEC CHECKSUMS:
   MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
   Realm: 5d6f84e3f65d4efa204d46b461e5bbbbbbf84c6c
   RealmSwift: 9022754b93fad23e1ffc950c93574c5b7899bd51
-  VTAcknowledgementsViewController: 2cae5539fb84081196ab00d267caad390f418ce6
 
-PODFILE CHECKSUM: 01ad0649e578488a4760bd30000a06210d0f90c6
+PODFILE CHECKSUM: 78eef3e935588af7e1e28d657f56e95952f007b8
 
 COCOAPODS: 1.11.2
