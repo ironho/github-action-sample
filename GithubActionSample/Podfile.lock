@@ -1,0 +1,46 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.9)
+  - Kingfisher (7.2.0)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (1.1.0)
+  - MXSegmentedControl (1.1.0)
+  - MXSegmentedPager (4.0.0):
+    - MXPagerView (~> 0.2)
+    - MXParallaxHeader (~> 1.0)
+    - MXSegmentedControl (~> 1.1)
+  - Realm (10.24.0):
+    - Realm/Headers (= 10.24.0)
+  - Realm/Headers (10.24.0)
+  - RealmSwift (10.24.0):
+    - Realm (= 10.24.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MXSegmentedPager
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedControl
+    - MXSegmentedPager
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  MXSegmentedControl: f39e46199a52cbc03b1c845e150215119f2542f5
+  MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
+  Realm: 5d6f84e3f65d4efa204d46b461e5bbbbbbf84c6c
+  RealmSwift: 9022754b93fad23e1ffc950c93574c5b7899bd51
+
+PODFILE CHECKSUM: 8e188055e6a5cc91e38e55e5f10932e16c7b9d31
+
+COCOAPODS: 1.11.2
