@@ -27,7 +27,7 @@ jobs:
       uses: actions/cache@v2
       id: cache_dependencies
       with:
-        path: $PROJECT_ROOT_PATH/Pods
+        path: Pods
         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-pods-
@@ -36,8 +36,8 @@ jobs:
       run: pod install --project-directory="$PROJECT_ROOT_PATH"/
 
     - name: Setup build for testing
-      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' build-for-testing | xcpretty --color
+      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=iPhone 13' build-for-testing | xcpretty --color
             
-    - name: Run tests - Any iOS Simulator Device
-      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' test-without-building | xcpretty --test --color
+    - name: Run tests - iPhone 13
+      run: xcodebuild -scheme "$XC_SCHEME" -workspace "$PROJECT_ROOT_PATH/$XC_WORKSPACE" -destination 'platform=iOS Simulator,name=iPhone 13' test-without-building | xcpretty --test --color
       

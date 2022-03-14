@@ -7,7 +7,7 @@ target 'GithubActionSample' do
   pod 'RealmSwift'
   pod 'Kingfisher'
   pod 'MXSegmentedPager'
-  
+
   target 'GithubActionSampleTests' do
     inherit! :search_paths
     
